@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <!--JQUERY Stuff. Lightbox Plugin https://www.jqueryscript.net/lightbox/lightbox-gallery-blurred.html -->
+    <link rel="stylesheet" href="jquery/jquery.lightbox.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="jquery/jquery.lightbox.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="photos.css"> <!--Creates favicon -->
+    <script src="photos.js"></script>
+
+    <!--Favicon Stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="navbar" id="navbar">
+    <div class="navcenter">
+        <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="photos.html">Photos</a>
+    <div class="navright">
+        <a href="quotes.html">Get a Quote</a>
+        <a href="about.html">Social</a>
+    </div>
+</div>
+<br><br><br>
+    <div class="photoBackground"> <!--Creates photo gallery (MISSING HOVER EFFECTS -->
+        <div class="photos">
+        <div class="column">
+
+            <a href="img/1.jpg">
+                <img src="img/1.jpg" alt="ico"> </a>
+            <a href="img/2.jpg">
+                <img src="img/2.jpg" alt="ico"> </a>
+            <a href="img/3.jpg">
+                <img src="img/3.jpg" alt="ico"> </a>
+            <a href="img/4.jpg">
+                <img src="img/4.jpg" alt="ico"> </a>
+            <a href="img/19.jpg">
+                <img src="img/19.jpg" alt="ico"> </a>
+        </div>
+        <div class="column">
+            <a href="img/5.jpg">
+                <img src="img/5.jpg" alt="ico"> </a>
+            <a href="img/l2.jpg">
+                <img src="img/l2.jpg" alt="ico"> </a>
+            <a href="img/6.jpg">
+                <img src="img/6.jpg" alt="ico"> </a>
+            <a href="img/7.jpg">
+                <img src="img/7.jpg" alt="ico"> </a>
+        </div>
+            <div class="column">
+                <a href="img/l1.jpg">
+                    <img src="img/l1.jpg" alt="ico"> </a>
+                <a href="img/8.jpg">
+                    <img src="img/8.jpg" alt="ico"> </a>
+                <a href="img/9.jpg">
+                    <img src="img/9.jpg" alt="ico"> </a>
+                <a href="img/10.jpg">
+                    <img src="img/10.jpg" alt="ico"> </a>
+            </div>
+            <div class="column">
+                <a href="img/11.jpg">
+                    <img src="img/11.jpg" alt="ico"> </a>
+                <a href="img/12.jpg">
+                    <img src="img/12.jpg" alt="ico"> </a>
+                <a href="img/14.jpg">
+                    <img src="img/14.jpg" alt="ico"> </a>
+                <a href="img/l3.jpg">
+                    <img src="img/l3.jpg" alt="ico"> </a>
+            </div>
+            <div class="column">
+                <a href="img/17.jpg">
+                    <img src="img/17.jpg" alt="ico"> </a>
+                <a href="img/18.jpg">
+                    <img src="img/18.jpg" alt="ico"> </a>
+                <a href="img/l4.jpg">
+                    <img src="img/l4.jpg" alt="ico"> </a>
+                <a href="img/16.jpg">
+                    <img src="img/16.jpg" alt="ico"> </a>
+            </div>
+    </div>
+        <p id="cameraInfo"></p>
+</div>
+<!--JQUERY SCRIPT CODE-->
+<script>
+    $('.photoBackground a').lightbox({
+        nav:false
+    });
+</script>
+<br>
+<div class="footer">Copyright Chris Greer. All Rights Reserved.</div> <!--Creates footer -->
+</body>
+</html>

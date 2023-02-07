@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get a Quote</title>
+    <link rel="stylesheet" type="text/css" href="quotes.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="quotes.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-darkness/jquery-ui.css"
+          rel = "stylesheet">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="navbar" id="navbar">
+    <div class="navcenter">
+        <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="photos.html">Photos</a>
+    <div class="navright">
+        <a href="quotes.html">Get a Quote</a>
+        <a href="about.html">Social</a>
+    </div>
+</div>
+<div class="formBackground">
+    <p><br>Fill out the form below to get a quote on your photography shoot!</p>
+    <form id="contactForm"> <!--Creates the form for quotes -->
+        <label for="fName">First Name:</label><br>
+        <input type="text" name="fName" id="fName" placeholder="John..." required> <br>
+        <label for="lName">Last Name:</label><br>
+        <input type="text" name="lName" id="lName" placeholder="Doe..." required> <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="jdoe@gmail.com" required><br>
+        <label for="emailConf">Confirm Email:</label><br>
+        <input type="email" id="emailConf" placeholder="jdoe@gmail.com" required><br>
+        <!--Jquery UI WIDGET -->
+        <script>
+                 $( function() {
+                     $( "#day" ).datepicker();
+                 } );
+             </script>
+        <!--Jquery UI WIDGET -->
+        <label for="day">Day:</label><br>
+        <input type="text" id="day" required><br>
+        <label for="typeofshoot">What type of shoot are you looking for?</label><br>
+        <select name="desc" id="typeofshoot">
+            <option value="" disabled selected> </option>
+            <option value="grad">Graduation</option>
+            <option value="wed">Wedding</option>
+            <option value="fam">Family & Friends</option>
+            <option value="head">Headshots</option>
+            <option value="other" id="other" name="other">Other</option>
+        </select>
+        <div id="explainBox"></div>
+        <button type="button" id="submit" disabled="true" onclick="successDone()">Submit</button>
+
+    </form>
+
+    <p id="success"></p>
+</div>
+
+<div class="footer">Copyright Chris Greer. All Rights Reserved.</div> <!--Creates footer-->
+</body>
+</html>

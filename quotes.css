@@ -1,0 +1,117 @@
+/* Start General and Navbar Styling*/
+body{ /* General Styling for the background and font*/
+    background-color:#333;
+    font-family: Montserrat, serif;
+    color: white;
+    background-image: url('img/vsco5ef7f911a42e6.jpg');
+    background-size: cover;
+
+}
+.logo{ /* Sets navbar logo to a certain size*/
+    width: 10%
+}
+.navbar { /* Sizing for the Navbar, as well as setting it relative to top of your screen*/
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+    font-size: 40px;
+    font-family: Montserrat, serif;
+    z-index: 1;
+    transition: top 0.5s;
+
+}
+.navbar a{ /* Sets styling for any links on the navbar*/
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar img{/* Sets styling for any image/logo on navbar*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11%;
+    padding-bottom: 5px;
+}
+
+.navcenter{ /* Sets padding for middle elemnts, such as the logo */
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navright{ /* Sets links to right side of navbar*/
+    float: right;
+}
+
+.navbar a:hover{ /* Adds hover effect for navbar*/
+    background-color: #555;
+    color: white;
+}
+.formBackground{ /*Sets background for page */
+    background-color: rgba(51, 51, 51, .8)
+}
+
+input{ /*Changes input box styling*/
+    width: 25%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: content-box;
+}
+label{ /*Changes label styling */
+    padding: 12px 50px 12px 0;
+    display: inline;
+    width : 120px;
+}
+select{ /*Changes dropdown box styling */
+    width: 25%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: content-box;
+    font-family: Montserrat, serif;
+}
+
+form{ /* Sets for to have center text align*/
+    text-align: center;
+}
+p{ /*Sets text styling for paragraphs*/
+    text-align: center;
+    font-size: 40px;
+}
+button{ /*Sets styling for the submit button */
+
+    width: 5%;
+    padding: 7px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff;
+    font-family: Montserrat, serif;
+}
+
+.day{
+    text-align: center;
+    padding-left: 100px;
+}
+
+.ui-datepicker{
+    margin-left: 500px;
+}
+
+.footer{ /*General styling for footer */
+    background-color: rgba(51, 51, 51, .8);
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}

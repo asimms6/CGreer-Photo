@@ -1,0 +1,89 @@
+/* Start General and Navbar Styling*/
+body{ /* General Styling for the background and font*/
+    background-color:#333;
+    font-family: Montserrat, serif;
+    color: white;
+    background-image: url('img/final-cover-forest.jpg');
+    background-size: cover;
+}
+.logo{ /* Sets navbar logo to a certain size*/
+    width: 10%
+}
+.navbar { /* Sizing for the Navbar, as well as setting it relative to top of your screen*/
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+    font-size: 40px;
+    font-family: Montserrat, serif;
+    z-index: 1;
+    transition: top 0.5s;
+
+}
+.navbar a{ /* Sets styling for any links on the navbar*/
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar img{/* Sets styling for any image/logo on navbar*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11%;
+    padding-bottom: 5px;
+}
+
+.navcenter{ /* Sets padding for middle elemnts, such as the logo */
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navright{ /* Sets links to right side of navbar*/
+    float: right;
+}
+
+.navbar a:hover{ /* Adds hover effect for navbar*/
+    background-color: #555;
+    color: white;
+}
+.photoBackground{ /* Sets photo as a background */
+    background-color: rgba(51, 51, 51, .8)
+}
+p{ /* Sets text styling*/
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.photos { /* Sets the photos divider to allow multiple rows of photos*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column { /*Creates five columns of photos that have varying heights but consistent widths */
+    flex: 15%;
+    max-width: 20%;
+    padding: 2px 8px;
+}
+
+.column img { /* Adds padding between images*/
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.footer{ /* Genearl footer styling*/
+    background-color: rgba(51, 51, 51, .8);
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,110 @@
+/* Start General and Navbar Styling*/
+body{ /* General Styling for the background and font*/
+    background-color:#333;
+    font-family: Montserrat, serif;
+    color: white;
+}
+.logo{ /* Sets navbar logo to a certain size*/
+    width: 10%
+}
+.navbar { /* Sizing for the Navbar, as well as setting it relative to top of your screen*/
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+    font-size: 40px;
+    font-family: Montserrat, serif;
+    z-index: 1;
+    transition: top 0.5s;
+
+}
+.navbar a{ /* Sets styling for any links on the navbar*/
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar img{/* Sets styling for any image/logo on navbar*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11%;
+    padding-bottom: 5px;
+}
+
+.navcenter{ /* Sets padding for middle elemnts, such as the logo */
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navright{ /* Sets links to right side of navbar*/
+    float: right;
+}
+
+.navbar a:hover{ /* Adds hover effect for navbar*/
+    background-color: #555;
+    color: white;
+}
+
+/* End General and Navbar Styling*/
+
+/* Start index.html Styling*/
+.backgroundphoto{ /* First parallax photo*/
+    background-image: url('img/54041447_2061779750542226_7642007892786854703_n.jpg');
+    height: 1000px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.abouttext{ /* Sets style for the text on the main page*/
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    font-family: Montserrat, serif;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.backgroundphoto2{ /* Sets styling for second parallax photo */
+     background-image: url('img/vsco5ef7f911a42e6.jpg');
+     height: 1000px;
+     width: 100%;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     z-index: -1;
+ }
+.backgroundphoto3{ /* Sets stlying for third parallax photo */
+      background-image: url('img/1.jpg');
+      height: 1000px;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+  }
+
+.divider{ /*Sets styling for a divider between parallax effects */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer{ /* General footer styling*/
+    background-color: rgba(51, 51, 51, .8);
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
